@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-      stage(run robot) {
+      stage('run robot') {
           steps {
               sh 'robot -v SELENIUM_GRID:http://127.0.0.1:4444/wd/hub selenium.robot'
           }
